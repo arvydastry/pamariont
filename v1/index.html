@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pamario NT – nekilnojamojo turto agentūra Klaipėdoje | Butai, namai ir sklypai Pamaryje</title>
+  <meta name="description" content="Butai, namai, sklypai ir komercinės patalpos Klaipėdoje, Palangoje, Neringoje, Kretingoje ir Gargžduose. Vietinė brokerių komanda, nemokamas turto vertinimas.">
+  <!-- DEMO versija – į tikrą svetainę šios žymos neperkelti -->
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0E2A3B">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Pereiti prie turinio</a>
+
+<!-- ===== VIRŠUTINĖ JUOSTA ===== -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <ul>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>Taikos pr. 52C-601, Klaipėda</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>I–V 9:00–18:00, VI pagal susitarimą</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:info@pamario-nt.lt">info@pamario-nt.lt</a></li>
+    </ul>
+    <div class="topbar-right">
+      <a href="tel:+37064852180">+370 648 52 180</a>
+      <div class="lang" role="group" aria-label="Kalba">
+        <button type="button" class="is-active">LT</button>
+        <button type="button" data-demo>RU</button>
+        <button type="button" data-demo>EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ANTRAŠTĖ (XStore struktūra: logotipas · paieška · veiksmai · kategorijų meniu) ===== -->
+<div class="site-head" id="siteHead">
+  <header class="header">
+    <div class="container header-inner">
+      <button class="burger" id="burger" type="button" aria-label="Meniu" aria-expanded="false" aria-controls="drawerNav"><span></span><span></span><span></span></button>
+      <a class="brand" href="#top" aria-label="Pamario NT – į pradžią">
+        <img src="assets/img/logo.svg" alt="" width="46" height="46">
+        <span class="brand-text">Pamario NT<small>Nekilnojamasis turtas</small></span>
+      </a>
+      <form class="search" role="search" id="searchForm">
+        <input type="search" id="searchInput" placeholder="Ieškoti: gatvė, miestas arba skelbimo ID…" autocomplete="off" aria-label="Paieška">
+        <button type="submit" aria-label="Ieškoti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+      </form>
+      <div class="header-actions">
+        <button class="icon-btn" id="favBtn" type="button" aria-label="Mėgstamiausi skelbimai">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 8a4.2 4.2 0 0 1 7.5 2.5c0 5.4-7.5 10-7.5 10z"/></svg>
+          <span class="txt">Mėgstamiausi</span><b class="fav-count" id="favCount">0</b>
+        </button>
+        <a class="icon-btn header-phone" href="tel:+37064852180">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+          <span class="txt">+370 648 52 180</span>
+        </a>
+        <a class="btn btn-gintaras btn-sm" href="#parduoti">Noriu parduoti</a>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar" aria-label="Kategorijos">
+    <div class="container navbar-inner">
+      <a class="nav-all" href="#skelbimai" data-type="all"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>Visi skelbimai</a>
+      <ul class="nav-links">
+        <li><a href="#skelbimai" data-type="butas">Butai</a></li>
+        <li><a href="#skelbimai" data-type="namas">Namai</a></li>
+        <li><a href="#skelbimai" data-type="kotedzas">Kotedžai</a></li>
+        <li><a href="#skelbimai" data-type="sklypas">Sklypai</a></li>
+        <li><a href="#skelbimai" data-type="komercines">Komercinės</a></li>
+        <li><a href="#skelbimai" data-type="sodyba">Sodybos</a></li>
+        <li><a href="#skelbimai" data-deal="nuoma">Nuoma</a></li>
+        <li><a class="is-new" href="#skelbimai" data-type="butas" data-badge="nauja">Naujos statybos<span class="dot"></span></a></li>
+      </ul>
+      <div class="nav-aux">
+        <a href="#kodel">Paslaugos</a>
+        <a href="#" data-demo>Komanda</a>
+        <a href="#kontaktai">Kontaktai</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- ===== MOBILUS MENIU ===== -->
+<aside class="drawer" id="drawerNav" aria-hidden="true">
+  <div class="drawer-head"><strong>Meniu</strong><button type="button" class="drawer-close" data-close aria-label="Uždaryti">×</button></div>
+  <ul class="drawer-links">
+    <li><a href="#skelbimai" data-type="all">Visi skelbimai</a></li>
+    <li><a href="#skelbimai" data-type="butas">Butai <small>2 542</small></a></li>
+    <li><a href="#skelbimai" data-type="namas">Namai <small>1 458</small></a></li>
+    <li><a href="#skelbimai" data-type="sklypas">Sklypai <small>220</small></a></li>
+    <li><a href="#skelbimai" data-type="komercines">Komercinės patalpos <small>148</small></a></li>
+    <li><a href="#skelbimai" data-type="sodyba">Sodybos</a></li>
+    <li><a href="#skelbimai" data-deal="nuoma">Nuoma</a></li>
+    <li><a href="#kodel">Paslaugos</a></li>
+    <li><a href="#" data-demo>Mūsų komanda</a></li>
+    <li><a href="#kontaktai">Kontaktai</a></li>
+  </ul>
+  <div class="drawer-foot">
+    <a class="btn btn-gintaras" href="#parduoti">Noriu parduoti</a>
+    <a class="btn btn-balta" href="tel:+37064852180">+370 648 52 180</a>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+
+<main id="main">
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-bg" data-parallax style="background-image:url('https://images.pexels.com/photos/12715989/pexels-photo-12715989.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="kicker">Nekilnojamojo turto agentūra Klaipėdoje</span>
+      <h1>Gyvenkite ten, kur kiti <em>atostogauja</em></h1>
+      <p>Butai, namai ir sklypai Klaipėdoje, Palangoje, Neringoje ir visame Pamaryje. Vietinė brokerių komanda, daugiau nei 4 000 skelbimų ir nemokamas turto vertinimas per 24 val.</p>
+      <div class="hero-cta">
+        <a class="btn btn-jura btn-lg" href="#skelbimai">Žiūrėti skelbimus</a>
+        <a class="btn btn-ghost btn-lg" href="#parduoti">Noriu parduoti</a>
+      </div>
+      <div class="hero-regions" aria-label="Vietovės">
+        <a href="#skelbimai" data-city="klaipeda">Klaipėda</a>
+        <a href="#skelbimai" data-city="klaipedos-r">Klaipėdos r.</a>
+        <a href="#skelbimai" data-city="gargzdai">Gargždai</a>
+        <a href="#skelbimai" data-city="palanga">Palanga</a>
+        <a href="#skelbimai" data-city="kretinga">Kretinga</a>
+        <a href="#skelbimai" data-city="neringa">Neringa</a>
+        <a href="#" data-demo>Kipras</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave" aria-hidden="true"><svg viewBox="0 0 1440 110" preserveAspectRatio="none"><path fill="currentColor" d="M0 70c180 40 360 40 540 10s360-50 540-20 270 40 360 50v10H0z"/></svg></div>
+</section>
+
+<!-- ===== PAIEŠKOS KORTELĖ ===== -->
+<div class="section-smelis">
+  <div class="container search-wrap">
+    <form class="search-card" id="heroSearch">
+      <div class="search-tabs" role="tablist" aria-label="Sandorio tipas">
+        <button type="button" class="is-active" data-deal="parduodama" role="tab" aria-selected="true">Pirkti</button>
+        <button type="button" data-deal="nuoma" role="tab" aria-selected="false">Nuomotis</button>
+      </div>
+      <div class="search-grid">
+        <div class="field"><label for="hsType">Tipas</label>
+          <select id="hsType"><option value="all">Visi tipai</option><option value="butas">Butai</option><option value="namas">Namai</option><option value="kotedzas">Kotedžai</option><option value="sklypas">Sklypai</option><option value="komercines">Komercinės patalpos</option><option value="sodyba">Sodybos</option></select></div>
+        <div class="field"><label for="hsCity">Vietovė</label>
+          <select id="hsCity"><option value="all">Visas Pamarys</option><option value="klaipeda">Klaipėda</option><option value="klaipedos-r">Klaipėdos r.</option><option value="gargzdai">Gargždai</option><option value="palanga">Palanga</option><option value="kretinga">Kretinga</option><option value="neringa">Neringa</option></select></div>
+        <div class="field"><label for="hsRooms">Kambariai</label>
+          <select id="hsRooms"><option value="all">Nesvarbu</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option></select></div>
+        <div class="field"><label for="hsMax">Kaina iki, €</label>
+          <input id="hsMax" type="number" inputmode="numeric" min="0" step="1000" placeholder="pvz. 150 000"></div>
+        <button class="btn btn-jura" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>Ieškoti</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- ===== SKAIČIAI ===== -->
+  <section class="stats">
+    <div class="container stats-grid reveal-stagger">
+      <div class="stat"><b data-count="2542">0</b><span>Butai</span></div>
+      <div class="stat"><b data-count="1458">0</b><span>Namai ir kotedžai</span></div>
+      <div class="stat"><b data-count="220">0</b><span>Žemės sklypai</span></div>
+      <div class="stat"><b data-count="148">0</b><span>Komercinės patalpos</span></div>
+    </div>
+  </section>
+
+  <!-- ===== KATEGORIJOS ===== -->
+  <section class="section cats">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div><span class="kicker">Kategorijos</span><h2>Ko ieškote Pamaryje?</h2></div>
+        <a class="link-more" href="#skelbimai" data-type="all">Visi skelbimai <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+      <div class="cats-grid reveal-stagger">
+        <a class="cat" href="#skelbimai" data-type="butas" data-tilt><img src="https://images.pexels.com/photos/19866414/pexels-photo-19866414.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="cat-body"><b>Butai</b><span>2 542 skelbimai</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></div></a>
+        <a class="cat" href="#skelbimai" data-type="namas" data-tilt><img src="https://images.pexels.com/photos/7031405/pexels-photo-7031405.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="cat-body"><b>Namai</b><span>1 458 skelbimai</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></div></a>
+        <a class="cat" href="#skelbimai" data-type="sklypas" data-tilt><img src="https://images.pexels.com/photos/15422584/pexels-photo-15422584.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="cat-body"><b>Sklypai</b><span>220 skelbimų</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></div></a>
+        <a class="cat" href="#skelbimai" data-type="komercines" data-tilt><img src="https://images.pexels.com/photos/7750129/pexels-photo-7750129.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="cat-body"><b>Komercinės</b><span>148 skelbimų</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></div></a>
+        <a class="cat" href="#skelbimai" data-type="sodyba" data-tilt><img src="https://images.pexels.com/photos/34480320/pexels-photo-34480320.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="cat-body"><b>Sodybos</b><span>23 skelbimai</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></div></a>
+        <a class="cat" href="#skelbimai" data-deal="nuoma" data-tilt><img src="https://images.pexels.com/photos/19857226/pexels-photo-19857226.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="cat-body"><b>Nuoma</b><span>Butai, namai, patalpos</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></div></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== SKELBIMAI SU FILTRAIS ===== -->
+<section class="section" id="skelbimai">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div><span class="kicker">Skelbimai</span><h2>Naujausi objektai Pamaryje</h2><p class="lead">Filtruokite pagal tipą, vietovę, kambarių skaičių ir kainą – rezultatai atsinaujina iš karto.</p></div>
+      <button class="btn btn-balta btn-sm toolbar-toggle" type="button" id="toolbarToggle" aria-expanded="true" aria-controls="toolbar">Filtrai</button>
+    </div>
+
+    <div class="toolbar" id="toolbar">
+      <div class="chips" role="group" aria-label="Turto tipas">
+        <button type="button" class="chip is-active" data-filter-type="all">Visi</button>
+        <button type="button" class="chip" data-filter-type="butas">Butai</button>
+        <button type="button" class="chip" data-filter-type="namas">Namai</button>
+        <button type="button" class="chip" data-filter-type="kotedzas">Kotedžai</button>
+        <button type="button" class="chip" data-filter-type="sklypas">Sklypai</button>
+        <button type="button" class="chip" data-filter-type="komercines">Komercinės</button>
+        <button type="button" class="chip" data-filter-type="sodyba">Sodybos</button>
+      </div>
+      <div class="toolbar-row">
+        <div class="field"><label for="fDeal">Sandoris</label>
+          <select id="fDeal"><option value="all">Pardavimas ir nuoma</option><option value="parduodama">Parduodama</option><option value="nuoma">Nuomojama</option></select></div>
+        <div class="field"><label for="fCity">Vietovė</label>
+          <select id="fCity"><option value="all">Visas Pamarys</option><option value="klaipeda">Klaipėda</option><option value="klaipedos-r">Klaipėdos r.</option><option value="gargzdai">Gargždai</option><option value="palanga">Palanga</option><option value="kretinga">Kretinga</option><option value="neringa">Neringa</option></select></div>
+        <div class="field"><label for="fRooms">Kambariai</label>
+          <select id="fRooms"><option value="all">Nesvarbu</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4+</option></select></div>
+        <div class="field"><label for="fMin">Kaina, €</label>
+          <div class="price-pair"><input id="fMin" type="number" inputmode="numeric" min="0" step="1000" placeholder="nuo"><input id="fMax" type="number" inputmode="numeric" min="0" step="1000" placeholder="iki" aria-label="Kaina iki"></div></div>
+        <button type="button" class="btn btn-balta" id="fClear"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Išvalyti</button>
+      </div>
+      <div class="toolbar-meta">
+        <div>Rasta <strong id="resCount">0</strong> <span id="resWord">skelbimų</span></div>
+        <div class="right">
+          <button type="button" class="chip" id="favOnly" aria-pressed="false">♥ Tik mėgstamiausi</button>
+          <label>Rikiuoti
+            <select id="fSort"><option value="new">naujausi</option><option value="price-asc">pigiausi</option><option value="price-desc">brangiausi</option><option value="area-desc">didžiausi</option></select>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="listings" id="listings" aria-live="polite"></div>
+    <div class="listings-foot"><button class="btn btn-jura btn-lg" type="button" id="moreBtn">Rodyti daugiau</button></div>
+  </div>
+</section>
+
+<!-- ===== PROMO (XStore stiliaus banneriai) ===== -->
+<section class="section section-smelis" id="parduoti">
+  <div class="container promo-grid reveal-stagger">
+    <article class="promo promo-gintaras">
+      <div class="promo-body">
+        <span class="kicker">Savininkams</span>
+        <h3>Parduokite greičiau ir už geresnę kainą</h3>
+        <p>Nemokamas rinkos vertinimas per 24 val., profesionalios nuotraukos, skelbimai visuose portaluose ir pirkėjų bazė, kuri jau laukia.</p>
+        <a class="btn btn-balta" href="#" data-demo>Noriu parduoti</a>
+      </div>
+      <div class="promo-media"><img src="https://images.pexels.com/photos/36729675/pexels-photo-36729675.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"></div>
+    </article>
+    <article class="promo promo-jura">
+      <div class="promo-body">
+        <span class="kicker">Pirkėjams</span>
+        <h3>Neradote tinkamo? Rasime už jus</h3>
+        <p>Užregistruokite pageidavimą – apie naujus objektus Klaipėdoje, Palangoje ar Neringoje pranešime pirmiesiems, dar prieš skelbiant portaluose.</p>
+        <a class="btn btn-balta" href="#" data-demo>Noriu pirkti</a>
+      </div>
+      <div class="promo-media"><img src="https://images.pexels.com/photos/7578905/pexels-photo-7578905.jpeg?auto=compress&cs=tinysrgb&w=900" alt="" loading="lazy"></div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== VIETOVĖS ===== -->
+<section class="section" id="vietoves">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div><span class="kicker">Vietovės</span><h2>Nuo Klaipėdos senamiesčio iki Nidos kopų</h2><p class="lead">Pažįstame kiekvieną Pamario kampelį – padėsime išsirinkti ne tik būstą, bet ir vietą gyventi.</p></div>
+    </div>
+    <div class="regions-scroller reveal-stagger">
+      <a class="region" href="#skelbimai" data-city="klaipeda"><img src="https://images.pexels.com/photos/37436197/pexels-photo-37436197.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="region-body"><b>Klaipėda</b><span>Uostamiestis prie jūros ir marių</span><em>Žiūrėti skelbimus</em></div></a>
+      <a class="region" href="#skelbimai" data-city="palanga"><img src="https://images.pexels.com/photos/37823710/pexels-photo-37823710.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="region-body"><b>Palanga</b><span>Kurortas, vasaros sostinė</span><em>Žiūrėti skelbimus</em></div></a>
+      <a class="region" href="#skelbimai" data-city="neringa"><img src="https://images.pexels.com/photos/12683153/pexels-photo-12683153.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="region-body"><b>Neringa</b><span>Nida, Juodkrantė, Preila, Pervalka</span><em>Žiūrėti skelbimus</em></div></a>
+      <a class="region" href="#skelbimai" data-city="kretinga"><img src="https://images.pexels.com/photos/7746940/pexels-photo-7746940.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="region-body"><b>Kretinga</b><span>Ramus miestas 15 min. nuo jūros</span><em>Žiūrėti skelbimus</em></div></a>
+      <a class="region" href="#skelbimai" data-city="gargzdai"><img src="https://images.pexels.com/photos/2371966/pexels-photo-2371966.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="region-body"><b>Gargždai</b><span>Augantis rajono centras</span><em>Žiūrėti skelbimus</em></div></a>
+      <a class="region" href="#skelbimai" data-city="klaipedos-r"><img src="https://images.pexels.com/photos/5112503/pexels-photo-5112503.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="region-body"><b>Klaipėdos r.</b><span>Sodybos, sklypai ir kotedžai</span><em>Žiūrėti skelbimus</em></div></a>
+      <a class="region" href="#" data-demo><span class="region-tag">Užsienis</span><img src="https://images.pexels.com/photos/7181391/pexels-photo-7181391.jpeg?auto=compress&cs=tinysrgb&w=700" alt="" loading="lazy"><div class="region-body"><b>Kipras</b><span>Investicijos prie Viduržemio jūros</span><em>NT Kipre</em></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KODĖL MES ===== -->
+<section class="section section-jura" id="kodel">
+  <div class="container why-grid">
+    <div class="why-media reveal">
+      <img src="https://images.pexels.com/photos/15996969/pexels-photo-15996969.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Burlaivis „Meridianas“ Klaipėdoje" loading="lazy">
+      <div class="why-float"><b>24 val.</b><span>nemokamas turto vertinimas pagal realius Pamario sandorius</span></div>
+      <div class="why-float second"><b>98 %</b><span>klientų rekomenduotų mus draugams</span></div>
+    </div>
+    <div class="reveal">
+      <span class="kicker">Kodėl Pamario NT</span>
+      <h2>Vietinė komanda, kuri pažįsta kiekvieną Pamario gatvę</h2>
+      <p class="lead">Dirbame tik Klaipėdos regione, todėl žinome tikrąsias kainas, kaimynystes ir pirkėjų lūkesčius – nuo senamiesčio butų iki sodybų prie marių.</p>
+      <div class="features reveal-stagger">
+        <div class="feature"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></i><b>Nemokamas vertinimas</b><p>Rinkos kainą nustatome per 24 val. remdamiesi realiais Pamario sandoriais.</p></div>
+        <div class="feature"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v5c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V7z"/><path d="m9 12 2 2 4-4"/></svg></i><b>Teisinė ir notarinė pagalba</b><p>Dokumentai, sutartys, notaras – visą sandorio eigą sutvarkome už jus.</p></div>
+        <div class="feature"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></i><b>Fotografija ir 3D turai</b><p>Kiekvienas objektas pristatomas profesionaliai ir skelbiamas visuose portaluose.</p></div>
+        <div class="feature"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg></i><b>Finansavimo konsultacijos</b><p>Padedame gauti geriausią būsto paskolos pasiūlymą ir suderinti terminus.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ATSILIEPIMAI ===== -->
+<section class="section section-smelis" id="atsiliepimai">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div><span class="kicker">Atsiliepimai</span><h2>Ką sako mūsų klientai</h2></div>
+      <a class="link-more" href="#" data-demo>Visi atsiliepimai <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </div>
+    <div class="reviews-grid reveal-stagger">
+      <article class="review"><div class="stars" aria-label="5 iš 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg></div><p>„Butą Debreceno gatvėje pardavėme per tris savaites – brokerė pati pasirūpino nuotraukomis, dokumentais ir derybomis.“</p><div class="review-author"><i>RT</i><div><b>Rasa ir Tomas</b>Klaipėda</div></div></article>
+      <article class="review"><div class="stars" aria-label="5 iš 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg></div><p>„Ieškojome namo Palangoje nuotoliniu būdu iš Vilniaus. Gavome vaizdo apžiūras ir sąžiningą nuomonę apie kiekvieną objektą.“</p><div class="review-author"><i>I</i><div><b>Ingrida</b>Vilnius → Palanga</div></div></article>
+      <article class="review"><div class="stars" aria-label="5 iš 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 7-6.2-3.6L5.8 21l1.4-7L2 9.3l7-.8z"/></svg></div><p>„Sklypą Gargžduose įvertino realiai, o ne „iš lubų“. Pirkėjas atsirado greičiau, nei tikėjomės.“</p><div class="review-author"><i>M</i><div><b>Mindaugas</b>Gargždai</div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="kontaktai">
+  <div class="cta-bg" data-parallax style="background-image:url('https://images.pexels.com/photos/228132/pexels-photo-228132.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
+  <div class="container reveal">
+    <h2>Jūsų turtas nusipelno pirkėjo, kuris jį įvertins</h2>
+    <p>Palikite kontaktus – per 24 val. paskambinsime, aptarsime rinkos kainą ir pasiūlysime pardavimo planą be jokių įsipareigojimų.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gintaras btn-lg" href="#" data-demo>Nemokamas vertinimas</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+37064852180">Skambinti +370 648 52 180</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== PORAŠTĖ ===== -->
+<footer class="footer">
+  <div class="footer-wave" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="currentColor" d="M0 40c240 40 480 40 720 0s480-40 720 0v40H0z"/></svg></div>
+  <div class="container">
+    <div class="newsletter">
+      <div><h3>Nauji skelbimai – pirmiausia jums</h3><p>Užsisakykite naujienlaiškį ir gaukite naujausius objektus Pamaryje dar prieš jiems pasirodant portaluose.</p></div>
+      <form data-demo-form><input type="email" placeholder="Jūsų el. paštas" aria-label="El. paštas" required><button class="btn btn-gintaras" type="submit">Prenumeruoti</button></form>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo.svg" alt="Pamario NT">
+        <p>UAB „Pamario NT“ – nekilnojamojo turto agentūra Klaipėdoje. Perkame, parduodame, nuomojame ir keičiame turtą visame Pamaryje bei Kipre.</p>
+        <div class="socials">
+          <a href="#" data-demo aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.3c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3v2.3H7.4V14h2.8v8z"/></svg></a>
+          <a href="#" data-demo aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" data-demo aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.5h-3V21h3zM5 3.5a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM21 13.3c0-3.3-1.8-5-4.2-5-1.9 0-2.8 1-3.3 1.8V8.5h-3V21h3v-6.6c0-1.7.8-2.6 2.1-2.6 1.2 0 1.9.8 1.9 2.6V21h3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Skelbimai</h4>
+        <ul>
+          <li><a href="#skelbimai" data-type="butas">Butai</a></li>
+          <li><a href="#skelbimai" data-type="namas">Namai ir kotedžai</a></li>
+          <li><a href="#skelbimai" data-type="sklypas">Žemės sklypai</a></li>
+          <li><a href="#skelbimai" data-type="komercines">Komercinės patalpos</a></li>
+          <li><a href="#skelbimai" data-type="sodyba">Sodybos ir sodai</a></li>
+          <li><a href="#skelbimai" data-deal="nuoma">Nuoma</a></li>
+          <li><a href="#" data-demo>NT objektai Kipre</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Vietovės</h4>
+        <ul>
+          <li><a href="#skelbimai" data-city="klaipeda">Klaipėda</a></li>
+          <li><a href="#skelbimai" data-city="klaipedos-r">Klaipėdos rajonas</a></li>
+          <li><a href="#skelbimai" data-city="gargzdai">Gargždai</a></li>
+          <li><a href="#skelbimai" data-city="palanga">Palanga</a></li>
+          <li><a href="#skelbimai" data-city="kretinga">Kretinga</a></li>
+          <li><a href="#skelbimai" data-city="neringa">Neringa</a></li>
+        </ul>
+        <h4 style="margin-top:22px">Įmonė</h4>
+        <ul>
+          <li><a href="#kodel">Paslaugos</a></li>
+          <li><a href="#" data-demo>Mūsų komanda</a></li>
+          <li><a href="#" data-demo>Karjera</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontaktai</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Taikos pr. 52C-601,<br>LT-91182 Klaipėda</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+37064852180">+370 648 52 180</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:info@pamario-nt.lt">info@pamario-nt.lt</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>I–V 9:00–18:00<br>VI pagal susitarimą</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 UAB „Pamario NT“. Visos teisės saugomos.</span>
+      <span><a href="#" data-demo>Privatumo politika</a><a href="#" data-demo>Slapukai</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-balta" href="tel:+37064852180">Skambinti</a>
+  <a class="btn btn-gintaras" href="#parduoti">Noriu parduoti</a>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
